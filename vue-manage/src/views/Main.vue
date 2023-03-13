@@ -2,7 +2,7 @@
   <div>
     <el-container>
       <el-aside width="auto"><common-aside></common-aside></el-aside>
-      <el-container>
+      <el-container class="con">
         <el-header> <common-header></common-header> </el-header>
         <common-tag />
         <el-main> <router-view></router-view></el-main>
@@ -25,6 +25,9 @@ export default {
 </script>
 
 <style scoped>
+div el-container {
+  height: 100%;
+}
 .el-header,
 .el-footer {
   background-color: #b3c0d1;
